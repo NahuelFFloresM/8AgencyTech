@@ -1,0 +1,35 @@
+@font-face { font-family:"SharpSansNo1-Bold"; src: url(./fonts/SharpSansNo1-Bold.woff); }
+
+* { margin: 0; padding: 0; }
+
+.intro-block{
+    font-family: "SharpSansNo1-Bold", Helvetica, sans-serif;
+    color: #02363D;
+    text-align: center;
+    line-height: 34px;
+    background-image: url("../assets/Group\ 4.svg");
+    padding-top: 4.8%;
+    padding: 10px 0px 10px 0px;
+}
+.header-tag{
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    letter-spacing: 0.93px;
+    text-align: center;
+    line-height: 25px;
+    padding: 2px 10px 2px 10px;
+    background: #C05100;
+    border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.text-footer{
+    font-family: SharpSansNo1-Semibold;
+    font-size: 13px;
+    color: #00373E;
+    text-align: center;
+    line-height: 25px;
+}
