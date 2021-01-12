@@ -7,15 +7,121 @@
     <title>Webinar</title>
 </head>
 <body>
-    <section>
-        <div class="intro-block">
-            <h4 class="header-tag">Webinar</h4>
-            <h1>
-                El reto de humanizar el CX financiero en 2021. 
-                <i>La experiencia de un Unicornio de Latam</i>
-            </h1>
-            <h3 class="text-footer">Miércoles 16 de diciembre | 17 hs (Horario de Quito)</h3>
+    <span id="screen_grey hidden"></span>
+    <section id="landing_page_intro">
+        <div class="intro_block">
+            <h4 class="header_tag">Webinar</h4>
+            <p>El reto de humanizar el CX financiero en 2021.</p>
+                <p><i>La experiencia de un Unicornio de Latam</i></p>
+            <h3 class="text_footer">Miércoles 16 de diciembre | 17 hs (Horario de Quito)</h3>
         </div>
-    </section>    
+    </section>
+    <div class="container">
+        <section id="information_columns">
+            <div class="column left_column">
+                <div class="sponsors_container">
+                    <ul class="sponsors_list">
+                        <li><img src="./assets/asobanca.png" alt="Aso Banca"></li>
+                        <li><img src="./assets/Bitmap.png" alt="Cluster Financiero"></li>
+                        <li><img src="./assets/ipbf.jpg" alt="Instituto de banca y seguros"></li>
+                        <li><img src="./assets/logo_hightelecom_horizontal.png" alt="High Telecom"></li>
+                        <li><img src="./assets/ebanx2_1.png" alt="Ebanx"></li>
+                        <li><img src="./assets/zendesk.jpg" alt="Zendesk"></li>
+                    </ul>
+                </div>
+                <p>Te invitan este webinar, donde trataremos la temática de cómo humanizar la experiencia del cliente de Banca y Seguros en el nuevo entorno digital.</p>
+                <p>Además podremos conocer las estrategias que aplicó LOREM para generar una experiencia memorable para sus clientes, mientras se convertía en el gran Unicornio de LATAM.</p>
+                <p>Escucha de primera mano la voz de nuestros especialistas:</p>
+                <ul class="flex_list_column specialist_list">
+                    <li>
+                        <div class="specialist_tag">
+                            <img src="./assets/foto_persona_template.png" alt="Especialista">
+                            <ul>
+                                <li class="specialist-name">José Perez</li>
+                                <li class="specialist-range">Presidente</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="specialist_tag">
+                            <img src="./assets/foto_persona_template.png" alt="Especialista">
+                            <ul>
+                                <li class="specialist_name">José Perez</li>
+                                <li class="specialist_range">Custom Service Senior Manager</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="specialist_tag">
+                            <img src="./assets/foto_persona_template.png" alt="Especialista">
+                            <ul>
+                                <li class="specialist_name">José Perez</li>
+                                <li class="specialist_range">Senior Customer Success Consultant</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="specialist_tag">
+                            <img src="./assets/foto_persona_template.png" alt="Especialista">
+                            <ul>
+                                <li class="specialist_name">José Perez</li>
+                                <li class="specialist_range">Gerente de Consultoría de Soluciones</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <p>Participa e inspírate para innovar y mejorar la interacción entre clientes y marcas con historias de éxito de empresas del ámbito financiero en América Latina.</p>
+                <p>¡Te esperamos!</p>
+            </div>
+            <div class="column right_column grey_background">
+                <h2>¡Inscríbete y reserva tu lugar ahora!</h2>
+                <form action="registerOnWebinar" method="post" id="submit_webinar_form">
+                    <label for="fname">Nombre</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                    <label for="lname">Apellido</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                    <label for="lname">Correo electrónico de trabajo</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="country">País</label>
+                    <select name="select" name="country" id="country-list">
+                        <option>Argentina</option>
+                    </select>
+                    <label for="telephone_number">Número de teléfono</label>
+                    <input type="number" id="telephone_number" name="telephone_number" min="0" required>
+                    <label for="job_position">Puesto de trabajo</label>
+                    <input type="text" id="job_position" name="job_position" required>
+                    <button type="submit">Inscríbite</button>
+                </form>
+            </div>
+        </section>
+        <div class="sponsors_container">
+            <ul class="sponsors_list">
+                <li><img src="./assets/asobanca.png" alt="Aso Banca"></li>
+                <li><img src="./assets/Bitmap.png" alt="Cluster Financiero"></li>
+                <li><img src="./assets/ipbf.jpg" alt="Instituto de banca y seguros"></li>
+                <li><img src="./assets/logo_hightelecom_horizontal.png" alt="High Telecom"></li>
+                <li><img src="./assets/ebanx2_1.png" alt="Ebanx"></li>
+                <li><img src="./assets/zendesk.jpg" alt="Zendesk"></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="container_with_separator">
+            <div class="copyright">
+                <span>&copy; 2020</span>
+            </div>
+            <div class="social_links">
+                <ul class="social_icons_list">
+                    <li><a href="https://twitter.com/"><img src="./assets/twitter_icon.png" alt="Twitter Link"></a></li>
+                    <li><a href="https://www.facebook.com/"><img src="./assets/facebook_icon.png" alt="Facebook Link"></a></li>
+                    <li><a href="https://www.linkedin.com/"><img src="./assets/linkedin_icon.png" alt="Linkedin Link"></a></li>
+                    <li><a href="https://web.youtube.com/"><img src="./assets/youtube_icon.png" alt="Youtube Link"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="./assets/instagram_icon.png" alt="Instragram Link"></a></li>
+                    <li><a href="https://www.snapchat.com/"><img src="./assets/snapchat_icon.png" alt="Snapchat Link"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
+<script src="./js/index.js"></script>
 </html>
