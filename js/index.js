@@ -23,11 +23,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let localData = localStorage.getItem('webinar_attendant');
         let newData = [];
-        console.log(JSON.parse(localData));
         if (!!localData){
             let editedData = [...JSON.parse(localData), newAttendant];
             newData = JSON.stringify(editedData);
-            console.log(newData);
             fetch(url, {
                 "method": 'POST', // http Method
                 "mode": "no-cors",
