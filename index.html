@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--MetaDATA-->
+    <!--......-->
+    <!---->
     <link rel="stylesheet" href="./css/index.css">
     <title>Webinar</title>
 </head>
 <body>
+    <!--Span para oscurecer la pantalla y mostrar el modal.-->
     <span id="screen_grey"></span>
+    <!---->
     <section id="landing_page_intro">
         <div class="intro_block">
             <h4 class="header_tag">Webinar</h4>
@@ -76,20 +81,30 @@
             <div class="column right_column grey_background">
                 <h2>¡Inscríbete y reserva tu lugar ahora!</h2>
                 <form action="registerOnWebinar" method="post" id="submit_webinar_form">
+                    <!--Nombre del registrado-->
                     <label for="fname">Nombre</label>
                     <input type="text" id="first_name" name="first_name" required>
+                    <!--Apellido del registrado-->
                     <label for="lname">Apellido</label>
                     <input type="text" id="last_name" name="last_name" required>
+                    <!--Correro del registrado-->
                     <label for="lname">Correo electrónico de trabajo</label>
                     <input type="email" id="email" name="email" required>
+                    <!--Pais del registrado-->
                     <label for="country">País</label>
-                    <select name="select" name="country" id="country-list">
-                        <option>Argentina</option>
+                    <!--Select Predefinido.-->
+                    <select name="country" name="country" id="country-list">
+                        <option value="arg">Argentina</option>
+                        <option value="br">Brazil</option>
+                        <option value="ch">Chile</option>
                     </select>
+                    <!--Telefono del registrado-->
                     <label for="telephone_number">Número de teléfono</label>
                     <input type="number" id="telephone_number" name="telephone_number" min="0" required>
+                    <!--Puesto laboral del registrado-->
                     <label for="job_position">Puesto de trabajo</label>
                     <input type="text" id="job_position" name="job_position" required>
+                    <!--SUBMIT-->
                     <button type="submit">Inscríbite</button>
                 </form>
             </div>
@@ -110,6 +125,7 @@
             <div class="copyright">
                 <span>&copy; 2020</span>
             </div>
+            <!-- LINK EXTERNOS A REDES SOCIALES-->
             <div class="social_links">
                 <ul class="social_icons_list">
                     <li><a href="https://twitter.com/"><img src="./assets/twitter_icon.png" alt="Twitter Link"></a></li>
@@ -122,6 +138,19 @@
             </div>
         </div>
     </footer>
+    
 </body>
+<!-- MODAL A MOSTRA CUANDO SE REALIZA SUBMIT AL FORMULARIO-->
+<div id="modal_submit" class="hidden">
+    <span id="modal_close_icon" onclick="closeModal()">&#x2715</span>
+    <div class="modal_title">
+        <h3>Obrigado pelo seu interesse. </h3>
+    </div>
+    <div class="modal_message">
+        <p>"Entraremos em contato com você em breve no e-mail 
+            que você preencheu no formulário"
+        </p>
+    </div>
+</div>
 <script src="./js/index.js"></script>
 </html>
